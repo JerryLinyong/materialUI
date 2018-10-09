@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>易可云</title>
+  <link rel="icon" href="./logo.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    html {
+      font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    }
+    h5 {
+      line-height: 240%;
+    }
+    nav ul a {
+      color: #88AAA9!important;
+      font-weight: bold
+    }
+    nav ul a:hover {
+      color: white!important;
+    }
+    p {
+      color: #846C63!important
+    }
+    nav ul a:hover {
+      background-color: #64b5f6
+    }
+    .carousel {
+      z-index: 10
+    }
+    #topBtn {
+      top: 4px;
+      padding-top: 0;
+    }
+    #topBtn .btn-large {
+      box-shadow: none
+    }
+    #topBtn ul {
+      top: 64px;
+    }
+  </style>
+</head>
+<body>
+  <div class="fixed-action-btn click-to-toggle hide-on-large-only" id="topBtn">
+    <a class="white btn-large waves-effect waves-dark">
+      <i class="material-icons blue-text text-lighten-1">menu</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating blue-grey">首页</a></li>
+      <li><a class="btn-floating red">控制台</a></li>
+      <li><a class="btn-floating yellow darken-1">教程</a></li>
+      <li><a class="btn-floating green">价格</a></li>
+      <li><a class="btn-floating blue">关于</a></li>
+    </ul>
+  </div>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large  blue lighten-1 btn-large waves-effect waves-light" id="btn">
+      <i class="material-icons">publish</i>
+    </a>
+  </div>
+  <div class="navbar-fixed">
+    <nav class="white z-depth-2" >
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo blue-text text-lighten-1"><img src="./logo.png" alt="" style="height: 46px;vertical-align: middle"> 易可云ECO</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#" class="hoverable waves-effect waves-light">首页</a></li>
+          <li><a href="#" class="hoverable waves-effect waves-light">管理控制台</a></li>
+          <li><a href="#" class="hoverable waves-effect waves-light">教程</a></li>
+          <li><a href="#" class="hoverable waves-effect waves-light">价格</a></li>
+          <li><a href="#" class="hoverable waves-effect waves-light">关于我们</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538138524833&di=bea578c8af499ba4949d9c28aec811e8&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1406%2F07%2Fc4%2F35018950_1402102609676.jpg"></div>
+  </div>
+  <div class="row container">
+    <div class="col m12 l6">
+      <div class="card">
+        <div class="card-content">
+          <h2 class="blue-text text-lighten-1 z-depth-3">NEW!全新版本重磅来袭</h2>
+          <p>云端统一后台管理，将粉丝价值最大化，提升留存，积累更新300余次，安全、简洁、方便。</p>
+          <h5 class="blue-text text-lighten-2">先进的技术</h5>
+          <p>采用底层技术更加安全，无需使用双端减少服务器成本开支，无需专业人员自行维护服务器。减少微信封号风险。
+            <br>
+            优化客服接待效率，支持模拟器和手机进行操作。
+          </p>
+          <h5 class="blue-text text-lighten-2">丰富的经验</h5>
+          <p>九年协议开发，技术成熟、富含经验。</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel col m12 l6">
+      <a class="carousel-item" href="#one!"><img class="materialboxed" src="http://www.materializecss.cn/images/nature/lorempixel1.jpg"></a>
+      <a class="carousel-item" href="#two!"><img class="materialboxed" src="http://www.materializecss.cn/images/nature/lorempixel2.jpg"></a>
+      <a class="carousel-item" href="#three!"><img class="materialboxed" src="http://www.materializecss.cn/images/nature/lorempixel3.jpg"></a>
+      <a class="carousel-item" href="#four!"><img class="materialboxed" src="http://www.materializecss.cn/images/nature/lorempixel4.jpg"></a>
+      <a class="carousel-item" href="#five!"><img class="materialboxed" src="http://www.materializecss.cn/images/nature/lorempixel5.jpg"></a>
+    </div>
+  </div>
+  <div class="slider container">
+    <ul class="slides">
+      <li>
+        <img src="http://www.materializecss.cn/images/sample-1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>这是一个巨大的标签行</h3>
+          <h5 class="light grey-text text-lighten-3">这是我们的小口号。</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://www.materializecss.cn/images/sample-1.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>左对齐标题</h3>
+          <h5 class="light grey-text text-lighten-3">这是我们的小口号。</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://www.materializecss.cn/images/sample-1.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>右对齐标题</h3>
+          <h5 class="light grey-text text-lighten-3">这是我们的小口号。</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://www.materializecss.cn/images/sample-1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>这是一个巨大的标签行</h3>
+          <h5 class="light grey-text text-lighten-3">这是我们的小口号。</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="row container">
+    <div class="col m4 s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.materializecss.cn/images/sample-1.jpg">
+          <span class="card-title">云数据维护</span>
+        </div>
+        <div class="card-content">
+          <p>一个账号解决所有数据维护</p>
+        </div>
+      </div>
+    </div>
+    <div class="col m4 s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.materializecss.cn/images/sample-1.jpg">
+          <span class="card-title">跨平台同步</span>
+        </div>
+        <div class="card-content">
+          <p>模拟器、安卓设备同步支持</p>
+        </div>
+      </div>
+    </div>
+    <div class="col m4 s12">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.materializecss.cn/images/sample-1.jpg">
+          <span class="card-title">多电商平台</span>
+        </div>
+        <div class="card-content">
+          <p>支持淘宝、拼多多、京东等平台</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="blue-text text-lighten-1" style="text-align:center"><span class="z-depth-2">主要功能</span> </h2>
+  <div class="row">
+    <div class="col l4 offset-l1 s8 offset-s2">
+      <div class="card col s12">
+        <div class="card-image">
+          <img src="http://www.materializecss.cn/images/sample-1.jpg">
+        </div>
+      </div>
+      <div class="card col s12">
+        <div class="card-image">
+          <img src="http://www.materializecss.cn/images/sample-1.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="col l6 m10 offset-m1 s10 offset-s1">
+      <div  class="col s12">
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">导购功能</h5>
+          <p>
+            公众号自动回复的“添加关键词”设置触发关键词，用于识别是否搜索； 比如：买、查找、搜索等等，更多可设置，方便大范围导购。然后设置为查找商品关键词。 
+            设置好后，直接提交保存，这样在公众号就可以直接使用导致功能，在公众号输入框写入触发词+搜索词，公众号即可自动回复。
+          </p>
+        </div>
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">名片裂变</h5>
+          <p>
+            利用邀请海报，设置邀请奖励积分，支持二级奖励实现种 子用户自发邀请裂变，滚雪球式的传播积累更多用户关注 公众号，关注优惠券商城，实现自动挣钱！邀请海报自带 5张个性化的封面，也可自定义自己的邀请海报封面、邀
+            请海报积分、提示语，同时也支持防作弊设置！
+          </p>
+        </div>
+      </div>
+      <div  class="col s12">
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">个性分佣</h5>
+          <p>
+            自动对比通用计划、鹊桥计划、定向计划佣金比例，并且 分析最高定向计划是否需要商家审核，智能优先选择秒过 最高佣金计划申请策略，避免丢失高佣金，让推广佣金最 大化！
+          </p>
+        </div>
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">提现管理</h5>
+          <p>
+            主要体现有提现申请，提现记录，会员管理系统下的商户向运营商进行结算兑换的一种方式， 自动批量处理用户提现
+          </p>
+        </div>
+      </div>
+      <div  class="col s12">
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">代理模式</h5>
+          <p>
+            支持个人代理。扩展商业圈，具有更丰富的用户群，和更多的收益方式。
+          </p>
+        </div>
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">批量化管理</h5>
+          <p>
+            后台统一发送朋友圈，方便 管理，批量处理订单、用户 体验更高。
+          </p>
+        </div>
+      </div>
+      <div  class="col s12">
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">自定义回复</h5>
+          <p>
+            进行设置，添加自定义回复，系统自动回复，减少客服压力，提高工作效率，一般可以写一些欢迎语，导航菜单，联系方式类的信息，帮助关注者更好的使用您的微信公众号。
+          </p>
+        </div>
+        <div class="col s12 l6">
+          <h5 class="blue-text text-lighten-2" style="text-align:center">朋友圈维护</h5>
+          <p>
+            朋友圈自动转发、点赞、评论，还可以参加各种线下活动，将网络上的朋友转化为现实中的朋友，这样能够提高大家之间的信任。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer blue lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col s4 offset-s1">
+          <h6 class="white-text">关于易可云</h6>
+          <p class="grey-text text-lighten-4">
+            易可云-微信淘客系统致力于打
+            <br>
+            造全方位的智能化微信反
+            <br>
+            利系统。
+          </p>
+        </div>
+        <div class="col s3">
+          <h6 class="white-text">网页导航</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">首页</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">产品</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">管理控制台</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">教程</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">价格</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">关于我们</a></li>
+          </ul>
+        </div>
+        <div class="col s3">
+          <h6 class="white-text">地址</h6>
+          <p class="white-text">浙江省杭州市余杭区金家渡金手指创意园</p>
+          <h6 class="white-text">联系我们</h6>
+          <p class="white-text">QQ交流群：862484694</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container" style="text-align:center">
+        © 2018 杭州易可云科技有限公司 浙ICP备17006444号-2
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  setInterval(function(){
+    $('.carousel').carousel('next');
+  },3000)
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+  $(document).ready(function(){
+    $('.slider').slider({full_width: true});
+  });
+  window.onload = function(){
+    var btn = document.getElementById("btn");
+    var clientHeight = document.documentElement.clientHeight;  //获取可视区域的高度
+    var timer = null;   //定义一个定时器
+    //回到顶部按钮点击事件
+    btn.onclick = function(){
+        timer = setInterval( function(){
+            //获取滚动条的滚动高度
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            //用于设置速度差，产生缓动的效果
+            var speed = Math.floor(-scrollTop / 6);
+            document.documentElement.scrollTop = document.body.scrollTop = scrollTop + speed;
+            isTop =true;  //用于阻止滚动事件清除定时器
+            if(scrollTop == 0){
+                clearInterval(timer);
+            }
+        },10 );
+    }
+}
+</script>
+</html>
