@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>商品详情</title>
+  <style>
+    html {
+      font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    }
+    footer {
+      display: none
+    }
+    @keyframes rotate {
+      from {transform:rotate(0deg)}
+      to {transform:rotate(360deg)}
+    }
+  </style>
+</head>
+<body>
+  <div class="row container z-depth-1" style="padding-bottom:20px">
+    <div class="input-field col s12">
+      <input id="first_name2" type="text" class="validate">
+      <label class="active" for="first_name2">输入关键词或商品标题</label>
+    </div>
+    <div class="col s12">
+      <img src="./123.jpeg" alt="" style="width:100%"> <!-- notice the "circle" class -->
+    </div>
+    <h4 class="col s12">我是要成为海贼王的男人</h4>
+    <div class="col s12">
+        <div class="chip red accent-3 white-text">路飞</div>
+        <div class="chip red accent-3 white-text">乌索普</div>
+    </div>
+    <div class="col s12">
+      <div class="col s4 chip red-text text-accent-3 white left" style="font-size:20px;font-weight:bold">￥1,500,000,000</div>
+      <div class="col s4 btn red right">一键复制</div>
+    </div>
+  </div>
+  <div class="row container" id="more">
+    <h5 class="col s12 truncate" style="border-left:6px solid red">其他海贼王后补选手</h5>
+  </div>
+  <footer style="text-align:center"><i class="large material-icons" style="font-size:30px">loop</i></footer>
+  <script>
+    function getMore () {
+      for (let i=0;i<9;i++){
+        document.querySelector('#more').innerHTML += 
+        ` <div class="col m4 s6" style="padding-bottom:10px">
+            <div class="col s12">
+              <img src="./123.jpeg" alt="" style="width:100%">
+            </div>
+            <h6 class="col s12 truncate">我是要成为海贼王的男人</h6>
+            <div class="col s12">
+              <div class="col red-text" style="border:1px solid red;border-radius: 10px">路飞</div>
+              <div class="col grey-text">最强劲敌</div>
+            </div>
+            <div class="col s12">
+              <div class="col l4 s12 chip red-text text-accent-3 white left" style="font-weight:bold">￥1,500,000,000</div>
+              <div class="col l7 s12 btn red right">一键复制</div>
+            </div>
+          </div>`
+      }
+    }
+    window.onload = function () {
+      getMore()
+    }
+    let timer = 0
+    window.onscroll = function(e){
+      let height = document.body.scrollHeight - window.innerHeight - window.pageYOffset
+      console.log(height)
+      if(height < 40 && timer === 0) {
+        document.querySelector('footer').style.display = 'block'
+        document.querySelector('.material-icons').style.animation = 'rotate 0.8s infinite'
+        timer = 1
+        setTimeout(() => {
+          getMore()
+          timer = 0
+        }, 3000);
+      }
+    }
+  </script>
+</body>
+</html>
